@@ -1,0 +1,1 @@
+(this.webpackJsonpf8_ui=this.webpackJsonpf8_ui||[]).push([[59],{1639:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return u}));n(2);var a=n(23),c=n(34),i=n(65),r=n(0);var u=function(){var t=Object(a.d)(c.Entity.fromState).socketChannel;return Object(a.d)(c.Entity.fromState).isUserAuthenticated?Object(r.jsx)(i.a,{channelName:t}):null}}}]);

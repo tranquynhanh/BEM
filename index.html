@@ -1,0 +1,39 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="CSS_files/style.css">
+</head>
+<body>
+    <div id="toast"></div>
+
+    <div>
+        <!--Button-->
+        <div onclick="showSuccessToast();" class="btn btn--success">Show success toast</div>
+        <div onclick="showErrorToast();" class="btn btn--error">Show error toast</div>
+    </div>
+    <script src="js/script.js"></script>
+    <script>     
+
+        function showSuccessToast () {
+            toast({
+            title: 'Thành công!',
+            message: 'Bạn đã đăng ký tài khoản thành công.',
+            type: 'success',
+            duration: 5000
+        })
+        }
+        function showErrorToast() {
+            toast({
+            title: 'Thất bại!',
+            message: 'Có lỗi xảy ra, vui lòng liên hệ quản trị.',
+            type: 'error',
+            duration: 5000
+        })
+        }
+    </script>
+</body>
+</html>
